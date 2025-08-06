@@ -1,0 +1,200 @@
+/* جنرل سیٹنگ */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #001f1f, #003333);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ہیرو سیکشن */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* کانٹینٹ باکس */
+.content-box {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 30px;
+  max-width: 750px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 195, 0.4);
+  animation: fadeIn 1.2s ease;
+}
+
+/* ہیڈنگ */
+.content-box h1 {
+  font-size: 40px;
+  color: #00ffc3;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* امیجز */
+.hero-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 0 12px rgba(0, 255, 195, 0.3);
+  transition: transform 0.3s ease;
+}
+.hero-img:hover {
+  transform: scale(1.01);
+}
+
+/* ان پٹ */
+input {
+  width: 90%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  outline: none;
+}
+
+/* پاسورڈ آنکھ */
+#eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* بٹن */
+button {
+  padding: 12px 30px;
+  background: #00ffc3;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: white;
+  color: #00a99d;
+  transform: scale(1.03);
+}
+
+/* ایرر میسج */
+#error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ڈیش بورڈ */
+#dashboard {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  line-height: 2;
+  display: none;
+  animation: fadeIn 1s ease-in;
+}
+
+#dashboard h2 {
+  font-size: 40px;
+  color: #00ffc3;
+  margin-bottom: 10px;
+}
+
+#dashboard p {
+  font-size: 22px;
+  margin: 6px 0;
+  color: #ddd;
+}
+
+/* بٹن */
+.btn {
+  display: block;
+  margin: 12px auto;
+  background: #00ffc3;
+  color: black;
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 80%;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: white;
+  color: #00a99d;
+}
+
+/* لاگ آؤٹ لنک */
+.logout {
+  margin-top: 25px;
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+/* معلومات سیکشن */
+.info {
+  margin-top: 35px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 20px;
+  color: #f0f0f0;
+  line-height: 2;
+  box-shadow: 0 0 10px rgba(0, 255, 195, 0.2);
+}
+
+.info h3 {
+  font-size: 28;
+  color: #00ffc3;
+  margin-bottom: 15px;
+}
+
+.info li {
+  margin: 8px 0;
+}
+
+/* ورک ڈیزائن پکچر */
+.info-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.25);
+  transition: transform 0.3s ease;
+}
+.info-img:hover {
+  transform: scale(1.02);
+}
+
+/* فِیڈ این */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
